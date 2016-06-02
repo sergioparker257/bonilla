@@ -1,0 +1,150 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="page" data-theme="e">
+	<div data-role="header">
+		<h1>DIRECTORIO</h1>
+	</div>
+    <div align="center">
+    <img src="images/directorio.png" width="608" height="239"> 
+    </div>
+	<div data-role="content">
+    	
+        
+		<ul data-role="listview" data-inset="true">
+      <li>
+        <a href="#page2">
+        <img src="images/feliz.png">
+        <h2>Agregar Contacto</h2>
+        <p>Agregue el numero de telefono y demas cosas importantes sobre alguien...</p>
+        </a>
+        <a href="#page2">Some Text</a>
+      </li>
+      <li>
+        <a href="#page3">
+        <img src="images/lupa.png">
+        <h2>Consultar Contactos</h2>
+        <p>Consulte la informacion de sus contactos guardados...</p>
+        </a>
+        <a href="#">Some Text</a>
+      </li>
+      	</ul>
+        
+	</div>
+    <div align="center">
+    <img src="images/face.png" width="431" height="285"> 
+    </div>
+	<div data-role="footer" data-position="fixed" data-fullscreen="true">
+		<h4>Version 1.0.2</h4>
+	</div>
+</div>
+
+
+
+
+
+<div data-role="page" id="page2" data-theme="e">
+	<div data-role="header">
+    <a data-role="button" data-rel="back" data-direction="reverse" data-icon="back">REGRESAR</a>
+    	
+		<h1>Ingresar Registro</h1>
+	</div>
+	<div data-role="content">
+    <h3>Contacto</h3><p>
+    <h5>Nombre:<h5>
+    <input name="Nombre" type="text" maxlength="40" placeholder="Ej: Xochitl Lopez Hernandez" required>
+    <h5>Telefono:<h5>
+     <input name="Telefono" type="text" maxlength="15" placeholder="Ej: 2761108754" required>
+    <h5>Correo electronico:<h5>
+    <input name="Correo" type="text" maxlength="40" placeholder="Ej: locas@gmail.com" required>
+    <h5>Dirección:<h5>
+    <input name="Direccion" type="text" maxlength="40" placeholder="Ej: Colonia Libertad No: 13" required>
+    <h5>Fecha especial:<h5>
+    <input name="Fecha" type="text" maxlength="25" placeholder="Ej: 12 de julio de 2000" required>
+    <input name="Guardar" type="button" value="GUARDAR" data-theme="a">
+    
+    
+    
+    	
+				
+	</div>
+	<div data-role="footer" data-position="fixed" data-fullscreen="true">
+		<h4>Version 1.0.2</h4>
+	</div>
+</div>
+
+
+
+<div data-role="page" id="page3" data-theme="e">
+	<div data-role="header">
+    <a data-role="button" data-rel="back" data-direction="reverse" data-icon="back">REGRESAR</a>
+		<h1>Consultar Registro</h1>
+	</div>
+	<div data-role="content">	
+		
+     <div data-role="collapsible" align="center">
+         <h3 align="center">A...</h3>   
+  <div data-role="panel" id="adelePage"> 
+    <h2>Angel David</h2>
+    <p>Numero de Telefono: 773-528-7483</p>
+    <p>Direccion: San Jose Chiapa
+    <br>Chiapa, No:3456 MXN</p>
+    <p>Fecha Especial: 12 de julio del 2000</p>
+    
+  </div> 
+  </div>
+  
+  <div data-role="collapsible" align="center">
+         <h3 align="center">I...</h3>
+          <div data-role="panel" id="itzelPage"> 
+    <h2>Itzel Sanchez</h2>
+    <p>Numero de Telefono: 773-788-7483</p>
+    <p>Direccion: San Jose Chiapa
+    <br>Chiapa, No:3946 MXN</p>
+    <p>Fecha Especial: 22 de septiembre del 2000</p>
+    
+  </div> 
+  </div>
+  
+  
+  <div data-role="collapsible" align="center">
+         <h3 align="center">M...</h3>
+  <div data-role="panel" id="monsePage"> 
+    <h2>Monserrat Alvarado</h2>
+    <p>Numero de Telefono: 212-330-5200</p>
+   <p>Direccion: San Jose Chiapa
+    <br>Chiapa, No:3476 MXN</p>
+    <p>Fecha Especial: 20 de febrero de 1999</p>
+   </div>
+   </div>
+   
+   <div data-role="collapsible" align="center">
+         <h3 align="center">T...</h3>
+   <div data-role="panel" id="tonaPage"> 
+    <h2>Tonatiuh Ramirez</h2>
+    <p>Numero de Telefono: 212-330-9734</p>
+   <p>Direccion: Rafael Lara Grajales
+    <br>Zaragoza, No:9876 MXN</p>
+    <p>Fecha Especial: 31 de junio de 1999</p>
+   </div>
+  </div>
+   
+  
+        
+        	
+	</div>
+	<div data-role="footer" data-position="fixed" data-fullscreen="true">
+		<h4>Version 1.0.2</h4>
+	</div>
+</div>
+
+</body>
+</html>
